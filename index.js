@@ -7,10 +7,18 @@ app.listen(port, function(){
     console.log("Express app listening on port " + port);
 });
 
-app.get('/', function(request, response){
+app.get('/items', function(request, response){
     response.send('Hello, World');
 });
 
-app.get('/hello', function(request, response){
+app.post('/items', function(request, response){
     response.send('Hello, Express');
+});
+
+app.put('/items', function(request, response){
+
+});
+
+app.delete('/items', function(request, response){
+
 });
